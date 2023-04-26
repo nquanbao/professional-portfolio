@@ -1,0 +1,140 @@
+body{
+    display: flex;
+    background-color: goldenrod;
+    line-height:1.5;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkblue;
+}
+h2{
+    font-size: 200%;
+}
+.header h1{
+    color: white;
+    font-size: 200%;
+    padding: 1%;
+}
+.header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    
+}
+.header nav ul{
+    display: flex;
+    justify-content: space-between;   
+    min-width: 500px;
+    list-style-type: none;
+    padding-right: 15px;
+}
+.header nav ul a{
+    color: white;
+    font-size: 125%;
+    font-weight: bold;
+}
+.header nav ul a:hover{
+    color: yellow;
+    cursor: pointer;
+}
+.about-me{
+    display: flex;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+.about-me h2{
+    width: 25%;
+    border-right: 3px solid black;
+    text-align: right;
+    padding-right: 10px;
+}
+.about-me div{
+    flex-wrap: wrap;
+    width: 75%;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+.work {
+    display: flex;
+    margin-top: 10px;
+    background-color: bisque;
+}
+.work h2 {
+    width: 25%;
+    border-right: 3px solid black;
+    text-align: right;
+    padding-right: 10px;
+}
+.work div {
+    flex-wrap: wrap;
+    width: 75%;
+    margin-left: 50px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.card {
+    width: 500px;
+    height: 300px;
+    margin: 10px 10px 10px 0px;
+    position: relative;
+    transition: transform .1s;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.card-html {
+    width: 100%;
+    height: 600px;
+    margin: 10px 10px 10px 0px;
+    position: relative;
+    transition: transform .1s;
+}
+.card-html:hover img{
+    transform: scale(1.1);
+}
+.card-h3{
+    width : 150px;
+    height: 60px;
+    border: 3px solid black;
+    background-color: aqua;
+    color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.contact-me{
+    display: flex;
+    margin-top: 10px;
+    background-color:aquamarine;
+}
+.contact-me h2 {
+    width: 25%;
+    border-right: 3px solid black;
+    text-align: right;
+    padding-right: 10px;
+}
+.contact-me nav {
+    width: 75%;
+    margin-left: 50px;
+}
+.contact-me nav ul{
+    width: 80%;
+    display: flex;
+    flex-wrap: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 1%;
+
+}
+.contact-me a{
+    font-size: 100%;
+}
+.contact-me a:hover {
+    color: red;
+}
