@@ -5,12 +5,11 @@ body{
     flex-direction: column;
 }
 .header{
-    width: 100%;
-    height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: darkblue;
+    padding: 1%;
 }
 h2{
     font-size: 200%;
@@ -20,11 +19,16 @@ h2{
     font-size: 200%;
     padding: 1%;
 }
+.header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
 .header img {
-    width: 50px;
-    height: 50px;
-    border-radius: 20px;
-    
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
 }
 .header nav ul{
     display: flex;
@@ -79,14 +83,19 @@ h2{
     margin-bottom: 10px;
 }
 .card {
-    width: 500px;
+    width: 48%;
     height: 300px;
     margin: 10px 10px 10px 0px;
     position: relative;
     transition: transform .1s;
 }
+.card img{
+    width: 100%;
+    height: 100%;
+}
 .card:hover img{
     transform: scale(1.1);
+    -webkit-filter: brightness(150%);
 }
 .card-html {
     width: 100%;
@@ -95,8 +104,13 @@ h2{
     position: relative;
     transition: transform .1s;
 }
+.card-html img{
+    width: 100%;
+    height: 100%;
+}
 .card-html:hover img{
     transform: scale(1.1);
+    -webkit-filter: brightness(150%);
 }
 .card-h3{
     width : 150px;
@@ -137,4 +151,26 @@ h2{
 }
 .contact-me a:hover {
     color: red;
+}
+@media screen and (max-width: 992px) {
+    .card-html {
+        margin: 10px 3px 10px 0px;
+    }
+    .about-me {
+        background-color: goldenrod;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .work {
+        background-color: goldenrod;
+    }
+    .contact-me nav ul{
+        flex-direction: column;
+    }
 }
