@@ -1,9 +1,11 @@
+/*Body fortmat*/
 body{
     display: flex;
     background-color: goldenrod;
     line-height:1.5;
     flex-direction: column;
 }
+/* Header fortmat*/
 .header{
     display: flex;
     align-items: center;
@@ -14,6 +16,7 @@ body{
 h2{
     font-size: 200%;
 }
+/* heading 1 fortmat with color, size, and padding in header*/
 .header h1{
     color: white;
     font-size: 200%;
@@ -42,10 +45,12 @@ h2{
     font-size: 125%;
     font-weight: bold;
 }
+/* Hover for navigation in the header, it change yellow with pointer mouse when we point to it*/
 .header nav ul a:hover{
     color: yellow;
     cursor: pointer;
 }
+/*About me section fortmatting*/
 .about-me{
     display: flex;
     background-color: aquamarine;
@@ -63,7 +68,7 @@ h2{
     margin-left: 50px;
     margin-bottom: 5px;
 }
-
+/*Work section fortmatting*/
 .work {
     display: flex;
     margin-top: 10px;
@@ -93,10 +98,12 @@ h2{
     width: 100%;
     height: 100%;
 }
+/* Image will be larger and lighter when we point to it*/
 .card:hover img{
     transform: scale(1.1);
     -webkit-filter: brightness(150%);
 }
+/* Fortmatting for first application*/
 .card-html {
     width: 100%;
     height: 600px;
@@ -108,6 +115,7 @@ h2{
     width: 100%;
     height: 100%;
 }
+/* Image will be larger and lighter when we point to first application*/
 .card-html:hover img{
     transform: scale(1.1);
     -webkit-filter: brightness(150%);
@@ -122,6 +130,7 @@ h2{
     left: 0;
     bottom: 0;
 }
+/*Contact me section fortmatting*/
 .contact-me{
     display: flex;
     margin-top: 10px;
@@ -149,9 +158,11 @@ h2{
 .contact-me a{
     font-size: 100%;
 }
+/* The navigation in contact me section change color when pointing to it*/
 .contact-me a:hover {
     color: red;
 }
+/* the screen of the webpage will change with the size of first application and background color of about-me section when the size of the webpage is smaller than 992px*/
 @media screen and (max-width: 992px) {
     .card-html {
         margin: 10px 3px 10px 0px;
@@ -160,6 +171,7 @@ h2{
         background-color: goldenrod;
     }
 }
+/*The header display, the size of card in work section, contact me display and background color of work section will change when the size of the webpage is smaller than 768px */
 @media screen and (max-width: 768px) {
     .header {
         flex-direction: column;
