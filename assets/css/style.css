@@ -105,9 +105,9 @@ h2{
 }
 /* Fortmatting for first application*/
 .card-html {
-    width: 100%;
+    width: 97%;
     height: 600px;
-    margin: 10px 10px 10px 0px;
+    margin: 15px 10px 10px 0px;
     position: relative;
     transition: transform .1s;
 }
@@ -118,7 +118,7 @@ h2{
 /* Image will be larger and lighter when we point to first application*/
 .card-html:hover img{
     transform: scale(1.1);
-    -webkit-filter: brightness(150%);
+    -webkit-filter: brightness(125%);
 }
 .card-h3{
     width : 150px;
@@ -147,7 +147,7 @@ h2{
     margin-left: 50px;
 }
 .contact-me nav ul{
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-wrap: flex;
     justify-content: space-between;
